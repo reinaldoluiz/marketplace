@@ -1,17 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projeto de Marketplace desenvolvido no code campus da quarta turma de treina dev.
 
-Things you may want to cover:
+Gems instaladas:
 
-* Ruby version
+* Devise
 
-* System dependencies
+* Bootstrap
 
-* Configuration
+* Rspec
 
-* Database creation
+* Capybara
 
 * Database initialization
 
@@ -21,4 +20,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+Gems instaladas:
