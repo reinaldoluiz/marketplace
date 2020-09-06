@@ -20,7 +20,7 @@ feature 'User sign-in' do
     click_on 'Entrar'
     fill_in 'Email', with: 'silvio@sbt.com'
     fill_in 'Senha', with: '12345678'
-    click_on 'Entrar'
+    click_on 'Acessar'
 
     #Assert
     expect(page).to have_content 'Silvio Santos'

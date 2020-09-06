@@ -15,7 +15,12 @@
         <a class="nav-link" href="#">Pricing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Entrar</a>
+      <% if user_signed_in? %>
+        <%= current_user.name%>
+        <%= link_to 'Sair', destroy_user_session_path,  :method => :delete%>
+      <% else%>
+       <%= link_to 'Entrar', new_user_session_path%>
+      <% end%>
       </li>
     </ul>
   </div>
