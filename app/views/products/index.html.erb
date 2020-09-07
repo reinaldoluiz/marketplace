@@ -2,11 +2,13 @@
 
 <% @products.each do |product|%>
   <div class="card" style="width: 18rem;">
-    <%= product.images %>
+    <%= image_tag product.image%>
     <div class="card-body">
       <h5 class="card-title"><%= product.name%></h5>
       <p class="card-text"><%= product.description%></p>
-      <a href="#" class="btn btn-primary">Detalhes</a>
+      <p class="card-text"><%= product.user.name%></p>
+      <a href="#" class="btn btn-primary">Comprar</a>
+      <%= link_to 'Detalhes', product_path(id: product.id) %>
     </div>
   </div>
 <%end%>

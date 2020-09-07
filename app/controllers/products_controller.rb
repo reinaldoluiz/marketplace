@@ -16,13 +16,12 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     @product.user = current_user
-    @product.save
+    @product.save!
     redirect_to @product, notice:'Produto criado com sucesso' 
   end
 
   private
-
   def product_params
-    params.require(:product).permit(:name, :price, :description, :images)
+    params.require(:product).permit(:name, :price, :description, :image)
   end
 end
